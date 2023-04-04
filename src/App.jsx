@@ -9,6 +9,7 @@ function App() {
       <Header />
       <Stories />
 
+      {/* explore buttons */}
       <div className="flex justify-center bg-slate-800 mt-10 p-1 rounded-2xl mx-5">
         <button className="bg-blue-500 rounded-2xl py-2 w-full text-center text-[#fff] font-['Poppins']">Explore</button>
         <button className="rounded-2xl py-2 w-full text-center text-[#fff] font-['Poppins']">Explore</button>

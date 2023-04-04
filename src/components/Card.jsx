@@ -11,32 +11,42 @@ const Card = () => {
       {/* header */}
       <div className="flex justify-between p-3 my-2">
         <div className="flex">
+          {/* user image */}
           <img src={userImage} alt="user-image" className="w-10 h-10 rounded-full border-blue-600 border-2"/>
-
+          {/* user info */}
           <div className="ml-2 font-['Poppins'] text-[#fff]">
             <h3>Ahmed Dorwart</h3>
             <p className="text-xs text-slate-400">10 Mins Ago</p>
           </div>
         </div>
-
+        {/* more button */}
         <div className="w-10 h-10 bg-slate-700 rounded-full flex justify-center items-center font-bold text-[#fff] pt-2">
           <BsThreeDots />
         </div>
       </div>
 
-      {/* image */}
+      {/* background image */}
       <div>
         <img src={cardBg} alt="background-image" className="w-full h-60"/>
       </div>
 
       {/* buttons */}
       <div className="flex justify-start my-2 text-lg gap-3 p-3 text-[#fff]">
-        <TbHeartFilled />
-        <TbMessageCircle2Filled />
-        <FaShare />
+        {/* like button */}
+        <button>
+          <TbHeartFilled />
+        </button>
+        {/* message button */}
+        <button>
+          <TbMessageCircle2Filled />
+        </button>
+        {/* share button */}
+        <button>
+          <FaShare />
+        </button>
       </div>
 
-      {/* likes and comments */}
+      {/* likes and comments counter */}
       <div className="flex justify-start items-center gap-3 ml-3 text-[#fff]">
         <p>
           <span className="font-semibold">229 </span>
